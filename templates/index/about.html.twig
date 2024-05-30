@@ -1,5 +1,46 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-  <h1 class="text-8xl uppercase">À propos</h1>
+  <section class="mt-12">
+    <h1 class="text-5xl md:text-8xl uppercase text-center mb-8">À propos</h1>
+
+    <div class="max-w-[1000px] mx-auto px-4">
+      <div class="flex gap-x-16 flex-col md:flex-row mb-12">
+        <div>
+          <img src="{{ asset('images/plan.svg') }}" alt="Plan" class="min-w-[300px]" />
+        </div>
+        <div>
+          <h2 class="text-3xl mt-4 text-center md:text-left">Plan</h2>
+          <p class="mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus voluptatum veniam consectetur expedita ipsa dignissimos architecto rem provident, sunt totam illo consequatur enim quod ea facilis quia praesentium reprehenderit.</p>
+        </div>
+      </div>
+      <div class="flex gap-x-16 flex-col-reverse md:flex-row mb-12">
+        <div>
+          <h2 class="text-3xl mt-4 text-center md:text-left">Share</h2>
+          <p class="mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus voluptatum veniam consectetur expedita ipsa dignissimos architecto rem provident, sunt totam illo consequatur enim quod ea facilis quia praesentium reprehenderit.</p>
+        </div>
+        <div>
+          <img src="{{ asset('images/share.svg') }}" alt="Share" class="min-w-[300px]" />
+        </div>
+      </div>
+      <div class="flex gap-x-16 flex-col md:flex-row mb-12">
+        <div>
+          <img src="{{ asset('images/interview.svg') }}" alt="Learn" class="min-w-[300px]" />
+        </div>
+        <div>
+          <h2 class="text-3xl mt-4 text-center md:text-left">Learn</h2>
+          <p class="mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus voluptatum veniam consectetur expedita ipsa dignissimos architecto rem provident, sunt totam illo consequatur enim quod ea facilis quia praesentium reprehenderit.</p>
+        </div>
+      </div>
+      <div class="flex gap-x-16 flex-col-reverse md:flex-row mb-12">
+        <div>
+          <h2 class="text-3xl mt-4 text-center md:text-left">Test</h2>
+          <p class="mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus voluptatum veniam consectetur expedita ipsa dignissimos architecto rem provident, sunt totam illo consequatur enim quod ea facilis quia praesentium reprehenderit.</p>
+        </div>
+        <div>
+          <img src="{{ asset('images/certification.svg') }}" alt="Test" class="min-w-[300px]" />
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

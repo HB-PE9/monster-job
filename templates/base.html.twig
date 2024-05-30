@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       {% block title %}
         Monster Job
@@ -19,11 +20,16 @@
     {% endblock %}
   </head>
   <body>
-    {% block navbar %}
-      {{ include('navbar.html.twig') }}
-    {% endblock %}
-    {% block body %}
+    <header>
+      {% block navbar %}
+        {{ include('navbar.html.twig') }}
+      {% endblock %}
+    </header>
 
-    {% endblock %}
+    <main>
+      {% block body %}
+
+      {% endblock %}
+    </main>
   </body>
 </html>
